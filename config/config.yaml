@@ -1,0 +1,24 @@
+student_id: R00226564
+
+gateway:
+  listen_host: 0.0.0.0
+  tcp_port: 5050
+  worker_host: worker
+  worker_port: 50051
+
+worker:
+  grpc_port: 50051
+
+sensors:
+  allowed_types: [TEMP, HUM, LIGHT]
+  ranges:
+    TEMP:
+      min: -20
+      max: 50
+    HUM:
+      min: 0
+      max: 100
+    LIGHT:
+      min: 0
+      max: 100000
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package dsp.r00226564;
+
+service SensorWorker {
+  rpc ProcessReading (ReadingRequest) returns (ReadingResponse);
+}
+
+message ReadingRequest {
+  string sensor_type = 1;
+  double value       = 2;
+  string student_id  = 3;
+}
+
+message ReadingResponse {
+  string status_message = 1;
+}
