@@ -32,7 +32,7 @@ class SensorWorkerService(sensor_pb2_grpc.SensorWorkerServicer):
 
 def serve(port: int, validator: ReadingValidator, student_id: str):
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-    sensor_pb2_grpc.SensorWorkerServicer_to_server(
+    sensor_pb2_grpc.add_SensorWorkerServicer_to_server(
         SensorWorkerService(validator, student_id), server
     )
     server.add_insecure_port(f"[::]:{port}")

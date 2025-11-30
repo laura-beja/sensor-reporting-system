@@ -1,0 +1,33 @@
+[2025-11-30 13:08:08] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 13:08:08] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 13:08:08] CLIENT INFO: Received response: reading accepted
+[2025-11-30 13:08:24] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 13:08:24] CLIENT INFO: Sending message: 89:A:R00226564
+[2025-11-30 13:08:24] CLIENT INFO: Received response: ERROR: invalid numeric value
+[2025-11-30 13:08:47] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 13:08:47] CLIENT INFO: Sending message: TEMP:100:R00226564
+[2025-11-30 13:08:47] CLIENT INFO: Received response: reading invalid
+[2025-11-30 13:09:07] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 13:09:07] CLIENT INFO: Sending message: TEMP:35:R00226564
+[2025-11-30 13:09:07] CLIENT INFO: Received response: reading accepted
+[2025-11-30 13:30:09] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 13:30:09] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 13:30:10] CLIENT INFO: Received response: ERROR: worker unavailable
+[2025-11-30 15:00:58] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 15:00:58] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 15:00:58] CLIENT INFO: Received response: reading accepted
+[2025-11-30 15:01:57] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 15:01:57] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 15:02:00] CLIENT INFO: Received response: ERROR: worker unavailable
+[2025-11-30 15:04:46] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 15:04:46] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 15:04:46] CLIENT INFO: Received response: reading accepted
+[2025-11-30 15:05:35] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 15:05:35] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 15:05:49] CLIENT INFO: Received response: ERROR: worker unavailable
+[2025-11-30 15:09:32] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 15:09:32] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 15:09:32] CLIENT INFO: Received response: reading accepted
+[2025-11-30 15:10:02] CLIENT INFO: Connecting to gateway at localhost:5050
+[2025-11-30 15:10:02] CLIENT INFO: Sending message: TEMP:25:R00226564
+[2025-11-30 15:10:22] CLIENT INFO: Received response: ERROR: worker unavailable

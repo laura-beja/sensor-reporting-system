@@ -15,7 +15,7 @@ def get_logger(name: str) -> logging.Logger:
     log_file = os.path.join(log_dir, "client.log")
 
     formatter = logging.Formatter(
-        fmt="[%Y-%m-%d %H:%M:%S] CLIENT %(levelname)s: %(message)s",
+        fmt="[%(asctime)s] CLIENT %(levelname)s: %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 

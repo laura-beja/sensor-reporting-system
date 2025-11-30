@@ -1,3 +1,13 @@
+import os
+import sys
+
+# Add src and proto folder to PYTHONPATH
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROTO_DIR = os.path.join(CURRENT_DIR, "proto")
+# Making sure Python can import sensor_pb2 / sensor_pb2_grpc
+sys.path.append(CURRENT_DIR)
+sys.path.append(PROTO_DIR)
+
 from logger import get_logger
 from config_loader import get_gateway_config
 from grpc_client import WorkerClient

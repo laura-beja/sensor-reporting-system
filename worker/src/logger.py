@@ -14,7 +14,7 @@ def get_logger(name: str) -> logging.Logger:
     log_file = os.path.join(log_dir, "worker.log")
 
     formatter = logging.Formatter(
-        fmt="[%Y-%m-%d %H:%M:%S] WORKER %(levelname)s: %(message)s",
+        fmt="[%(asctime)s] WORKER %(levelname)s: %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 

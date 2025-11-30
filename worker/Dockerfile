@@ -9,16 +9,14 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY config /app/config
 COPY proto /app/proto
+COPY worker/src /app/worker/src
 
-# Generate gRPC Python code into worker/src/proto
-RUN mkdir -p /app/worker/src/proto && \
-    python -m grpc_tools.protoc \
+RUN python -m grpc_tools.protoc \
       -I /app/proto \
       --python_out=/app/worker/src/proto \
       --grpc_python_out=/app/worker/src/proto \
       /app/proto/sensor.proto
 
-COPY worker/src /app/worker/src
 
 WORKDIR /app/worker
 CMD ["python", "-u", "src/worker.py"]
